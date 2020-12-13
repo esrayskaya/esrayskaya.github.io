@@ -1,0 +1,220 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+*{
+    font-family: 'Comfortaa', cursive;
+    font-size: 99%;
+}
+body{
+    min-width: 900px;
+}
+
+body, html{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(233, 233, 190);
+    background-image: url(../Other/font3.jpg);
+    background-size: 100%; /* Современные браузеры */
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.header__title{
+    text-align: center;
+    padding: 1rem;
+}
+/* @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap'); */
+.header__title-name{
+    color: rgb(126,105,95);
+    font-family: 'Comfortaa', cursive;
+}
+
+.header__menu{
+    display: flex;
+    flex-direction: row;    
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+/* @import url(https://fonts.googleapis.com/css?family=Comfortaa,700&subset=latin,cyrillic); */
+.header__title-name, 
+.header__title-menu {
+  /* font-family: 'Playfair Display SC', serif; */
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 24px;
+  color: #222222;
+  text-align: center;
+  
+  align-content: space-between;
+}
+
+.header__item { 
+    text-decoration: none;
+    color: rgb(126,105,95);
+} 
+
+ .header__item:hover{
+    /* src: local('Comfortaa'), local('Comfortaa'), url(https://fonts.google.com/specimen/Comfortaa); */
+    color: rgb(126,105,95);
+    -webkit-text-stroke: 1px rgb(126,105,95);  /*обводка*/
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    padding-top: 10%;/**/
+}
+
+/* .footer__info{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+} */
+
+.footer__info-text,
+.footer__info-picture
+{
+    /* width: 40%; */
+    padding: 1rem;
+    margin: auto;
+    padding-left: 5rem;
+}
+
+/* .footer__red-book-picture{
+    width: 60%;
+} */
+
+/* .footer__info-picture{
+    width: 40%;
+    margin: auto;
+} */
+
+.footer__statistic{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.statistic-number{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+}
+
+.statistic-number__fish,
+.statistic-number__amphibians,
+.statistic-number__bird,
+.statistic-number__animal{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 1rem;
+}
+
+.number-fish,
+.number-amphibians,
+.number-bird,
+.number-animal{
+    font-size: 4rem;
+    font-weight: bold;
+    /* margin: auto; */
+}
+
+.number-fish{
+    color: blue;
+}
+
+.number-amphibians{
+    color: green;
+}
+
+.number-bird{
+    color: brown;
+}
+
+.number-animal{
+    color: darkorange;
+}
+
+.title-fish,
+.title-amphibians,
+.title-bird,
+.title-animal{
+    padding-top: 1rem;
+}
+
+.down{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.statistic-number__amphibians{
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 500px){/*для тф*/
+    .header__menu{
+        width: 80%;
+        font-size: 2rem;
+        flex-direction: column;
+    }
+    .header__title-name{
+        font-size: 2rem;
+    }
+    .footer__info-text,
+    .down,
+    .footer__statistic{
+        font-size: 2rem;
+    }
+    .statistic-number{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        /* margin: auto; */
+        justify-content: center;
+        justify-items: center;
+        justify-self: center;
+    }
+    .statistic-number__fish,
+    .statistic-number__amphibians,
+    .statistic-number__bird,
+    .statistic-number__animal{
+        white-space: nowrap;
+    }
+}
+@media only screen and (min-width: 501px){/*для пк*/
+    .header__menu{
+        display: flex;
+        flex-direction: row;
+    
+        width: 60%; 
+        justify-content: space-between;/*пространство между дочерникми блоками (заголовками меню)*/
+        margin: auto;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        background-color: white;
+        border-radius: 1rem;
+    }
+}

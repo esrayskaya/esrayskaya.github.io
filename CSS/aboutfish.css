@@ -1,0 +1,132 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+*{
+    font-family: 'Comfortaa', cursive;
+    font-size: 99%;
+}
+body{
+    min-width: 900px;
+}
+
+body, html{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(233, 233, 190);
+    background-image: url(../Other/font3.jpg);
+    background-size: 100%; /* Современные браузеры */
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+}
+
+.header__title{
+    text-align: center;
+    padding: 1rem;
+}
+
+.header__title-name{
+    color: rgb(126,105,95);
+}
+
+.header__menu{
+    display: flex;
+    flex-direction: row;
+    
+    width: 60%; 
+    justify-content: space-between;/*пространство между дочерникми блоками (заголовками меню)*/
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.header__title-name, .header__title-menu {
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 24px;
+  color: #222222;
+  text-align: center;
+  
+  align-content: space-between;
+}
+
+.header__item { 
+    text-decoration: none;
+    color: rgb(126,105,95);
+} 
+
+ .header__item:hover{
+    /* src: local('Comfortaa'), local('Comfortaa'), url(https://fonts.google.com/specimen/Comfortaa); */
+    color: rgb(126,105,95);
+    -webkit-text-stroke: 1px rgb(126,105,95);  /*обводка*/
+}
+
+.foter__main{
+    width: 60rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.foter__main-picture{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.picture-main{
+    border-radius: 1rem;
+    width: 60%;
+}
+
+.foter__main-picture:hover .details {
+    transform: translate(-50%, -50%) rotateY(0deg);
+    opacity: 1;
+}
+
+.foter__main-picture .details {
+    width: 67.5%;
+    height: 50%; 
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateY(90deg);
+    transform-origin: 50%;
+    background: rgba(255,255,255,0.9);
+    opacity: 0;
+    transition: all 0.4s ease-in;
+    text-align: center;
+}
+
+@media only screen and (max-width: 500px){
+    .header__menu{
+        width: 80%;
+        font-size: 2rem;
+        flex-direction: column;
+    }
+    .header__title-name{
+        font-size: 2rem;
+    }
+    .foter__main{
+        font-size: 2rem;
+    }
+    .foter__main-text{
+        font-size: 2.5rem;
+        padding: 1.5rem;
+    }
+}
+@media only screen and (min-width: 501px){
+    .header__menu{
+        width: 60%;
+        justify-content: space-between;
+    }
+}

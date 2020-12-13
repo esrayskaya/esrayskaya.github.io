@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+*{
+    font-family: 'Comfortaa', cursive;
+    font-size: 99%;
+}
+body{
+    min-width: 900px;
+}
+
+body, html{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(233, 233, 190);
+    background-image: url(../Other/font3.jpg);
+    background-size: 100%; /* Современные браузеры */
+}
+
+.header__title{
+    text-align: center;
+    padding: 1rem;
+}
+
+.header__title-name{
+    /* color: rgb(126,105,95); */
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 24px;
+}
+
+.foter{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    /* width: 80rem; */
+    align-items: center;
+    /* align-content: center;  */
+    /* justify-content: center;  */
+}
+
+.foter__view{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    /* width: 70rem; */
+    margin: 1rem;
+    border: 1px solid rgb(165, 164, 164);
+    border-radius: 0.5rem;
+    box-shadow:0 0 10px rgb(165, 164, 164);
+    padding: 0.938rem;
+    
+}
+img{
+    width: 15rem;
+}
+
+.view__content{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+}
+
+.view__name{
+    font-weight: bold;
+}
+@media only screen and (max-width: 500px){/*для тф*/
+    .foter__view{
+        width: 90%;
+        font-size: 2rem;
+        flex-direction: column;
+    }
+    img{
+        width: 90%;
+        height: 22rem;
+        object-fit: fill;
+        align-self: center;
+        margin-bottom: 1rem;
+    }
+    #back, 
+    .header__title{
+        font-size: 2rem;
+    }
+}
+@media only screen and (min-width: 501px){/*для пк*/
+    .foter__view{
+        width: 60%;
+    }
+}

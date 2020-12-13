@@ -1,0 +1,30 @@
+.settings, .yearclass{
+    text-align: center; /*текст в центре*/
+}
+
+.settings, .people, .yearclass, .lessonclass{
+    display: flex; /*содержимое расположить в столбик и сделать гибкое перемещение*/
+    flex-direction: column;
+}
+
+#lab{
+    margin-top: 100px; /*отступ перед текстом*/
+}
+
+#topic{
+    margin-top: 0px;
+}
+
+.people{
+    align-self: flex-end; /*тсдвиг текста вправо*/
+    align-items: flex-end;
+}
+
+#do1, #do2, #lesson{
+    font-weight: bold;
+}
+
+#studentName, #teacherName{
+    color: green;
+    font-style: italic;
+}
