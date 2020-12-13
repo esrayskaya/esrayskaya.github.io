@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+*{
+    font-family: 'Comfortaa', cursive;
+    font-size: 99%;
+}
+body{
+    min-width: 900px;
+}
+
+body, html{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(233, 233, 190);
+    background-image: url(../Other/font3.jpg);
+    background-size: 100%; /* Современные браузеры */
+}
+
+.header__title{
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+}
+
+.content__people-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+
+    width: 15rem;
+    padding: 1rem;
+    /* white-space: nowrap; */
+}
+
+img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+.content__people-info__name{
+    font-weight: bold;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.content__people-info__description{
+    text-align: center;
+}
+
+@media only screen and (max-width: 400px){
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content__people-info{
+        margin-top: 2rem;
+    }
+    span,
+    .content__people-info__name,
+    .content__people-info__description,
+    #back
+    {
+        font-size: 2rem;
+    }
+
+}
+@media only screen and (min-width: 401px){
+    .content{
+        display: flex;
+        flex-direction: row;
+    }
+    .content__people-info{
+        margin-top: 0;
+    }
+
+    .content__people-info__name,
+    .content__people-info__description,
+    #back
+    {
+        font-size: 1rem;
+    }
+
+}
+
+#back{
+    text-align: center;
+}
