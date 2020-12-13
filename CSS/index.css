@@ -186,7 +186,7 @@ body, html{
         font-size: 2rem;
     }
     .statistic-number{
-        width: 50%;
+        width: 80%;
         display: flex;
         flex-direction: column;
         /* margin: auto; */
@@ -200,6 +200,10 @@ body, html{
     .statistic-number__animal{
         white-space: nowrap;
     }
+    /**/
+    /* .footer{
+        margin: 0;
+    } */
 }
 @media only screen and (min-width: 501px){/*для пк*/
     .header__menu{
