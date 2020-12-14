@@ -5,7 +5,7 @@
     font-size: 99%;
 }
 body{
-    min-width: 900px;
+    min-width: 100px;
 }
 
 body, html{
@@ -110,21 +110,25 @@ body, html{
 @media only screen and (max-width: 500px){
     .header__menu{
         width: 80%;
-        font-size: 2rem;
+        font-size: 1rem;
         flex-direction: column;
     }
     .header__title-name{
-        font-size: 2rem;
+        font-size: 1rem;
     }
     .foter__main{
-        font-size: 2rem;
+        font-size: 1rem;
+        width: 100%;
     }
     .foter__main-text{
-        font-size: 2.5rem;
+        font-size: 1rem;
         padding: 1.5rem;
 
         background-color: white;
         opacity: 0.7;/*полупрозрачность фона*/
+    }
+    .foter__main-picture{
+        /* width: 50rem; */
     }
 }
 @media only screen and (min-width: 501px){

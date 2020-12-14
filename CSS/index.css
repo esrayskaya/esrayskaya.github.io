@@ -5,7 +5,7 @@
     font-size: 99%;
 }
 body{
-    min-width: 900px;
+    min-width: 100px;
 }
 
 body, html{
@@ -174,16 +174,16 @@ body, html{
 @media only screen and (max-width: 500px){/*для тф*/
     .header__menu{
         width: 80%;
-        font-size: 2rem;
+        font-size: 1rem;
         flex-direction: column;
     }
     .header__title-name{
-        font-size: 2rem;
+        font-size: 1rem;
     }
     .footer__info-text,
     .down,
     .footer__statistic{
-        font-size: 2rem;
+        font-size: 0.8rem;
     }
     .statistic-number{
         width: 80%;
