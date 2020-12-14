@@ -4,7 +4,7 @@
     font-size: 99%;
 }
 body{
-    min-width: 900px;
+    min-width: 100px;
 }
 
 body, html{
@@ -72,7 +72,7 @@ img{
     .content__people-info__description,
     #back
     {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
 }
