@@ -62,6 +62,35 @@ img{
 .view__name{
     font-weight: bold;
 }
+
+.back_to_top {
+    position: fixed;
+    bottom: 80px;
+     right: 40px;
+    z-index: 9999;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background: #f5f5f5;
+    color: #444;
+    cursor: pointer;
+    border-radius: 2px;
+    /* display: none;  */
+    border: 1px solid rgb(165, 164, 164);
+    border-radius: 0.5rem;
+    box-shadow:0 0 10px rgb(165, 164, 164);
+    /* padding: 0.938rem; */
+  }
+  
+  .back_to_top:hover {
+    background: #e9ebec;
+  }
+  
+  .back_to_top-show {
+    display: block;
+  }
+
 @media only screen and (max-width: 500px){/*для тф*/
     .foter__view{
         width: 90%;
